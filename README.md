@@ -1,12 +1,25 @@
-##Clone The Respository
-git clone
-Get Latest Cryptocurrency Stats
-URL: /stats
+## Clone The Respository
+git clone https://github.com/suryapranay1/KoinX-task.git
+cd KoinX-task
+
+## Install the node_modules
+npm i 
+
+## Run the Project
+npm start
+
+## Tech Stack used
+Server: Node, Express
+
+ Database: Mongodb
+
+API: CoinGecko
+
+## Get Latest Cryptocurrency Stats
+## URL: /stats
 Method: GET
 Description: Retrieves the latest data for all tracked cryptocurrencies.
-Example:
-Response
-200 OK
+
 {
     "bitcoin": {
         "price": 40000,
@@ -24,12 +37,11 @@ Response
         "change24h": 1.5
     }
 }
-Get Standard Deviation of Cryptocurrency Prices
-URL: /deviation
+## Get Standard Deviation of Cryptocurrency Prices
+## URL: /deviation
 Method: GET
 Description: Calculates the standard deviation of the price for each cryptocurrency based on the last 100 records.
-Example
-Response
+
 200 OK
 {
     "deviations": {
@@ -40,13 +52,6 @@ Response
 }
 To retrieve the latest stats for all cryptocurrencies, send a GET request to:
 
-arduino
-Copy code
-GET https://koinx-task-production.up.railway.app/api/stats
-Get Standard Deviation
-To retrieve the standard deviation of prices for each cryptocurrency, send a GET request to:
 
-arduino
-Copy code
-GET https://koinx-task-production.up.railway.app/api/deviation
+
 
