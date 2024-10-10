@@ -19,11 +19,7 @@ router.post("/fetch", async (req, res) => {
 });
 
 // Existing routes
-router.get("/", (req, res) => {
-  res.send({
-    routes: ["/stats", "/deviation"],
-  });
-});
+
 router.get("/stats", getLatestData);
 router.get("/deviation", getStandardDeviation);
 
