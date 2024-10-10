@@ -1,4 +1,5 @@
-1.Deployemnt Link: https://koinx-task-production.up.railway.app/api
+##Clone The Respository
+git clone
 Get Latest Cryptocurrency Stats
 URL: /stats
 Method: GET
