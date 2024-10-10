@@ -49,8 +49,16 @@ Description: Calculates the standard deviation of the price for each cryptocurre
         "matic-network": 0.15,
         "ethereum": 250.35
     }
+    
 }
-To retrieve the latest stats for all cryptocurrencies, send a GET request to:
+## After starting the server, type the following
+
+http://localhost:3000/api/stats to fetch the etch the current price in USD, market cap in USD and 24 hour change of 3 cryptocurrencies.
+
+## To fetch standard deviation
+http://localhost:3000/api/deviation?{coin}
+## example
+http://localhost:3000/api/deviation?coin=bitcoin
 
 
 
